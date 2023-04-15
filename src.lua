@@ -5542,7 +5542,7 @@ AddCommand("serverhop", {"sh"}, "switches servers (optional: min, max or mid)", 
 
         local queue_on_teleport = syn and syn.queue_on_teleport or queue_on_teleport
         if (queue_on_teleport) then
-            queue_on_teleport("loadstring(game.HttpGet(game, \"https://raw.githubusercontent.com/heIlth/fates-admin-remake/master/src.lua"))()");
+            queue_on_teleport("loadstring(game.HttpGet(game, \"https://raw.githubusercontent.com/heIlth/fates-admin-remake/master/src.lua")();
         end;
 
         TeleportService.TeleportToPlaceInstance(TeleportService, game.PlaceId, Server.id);
