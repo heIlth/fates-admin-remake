@@ -8582,6 +8582,6 @@ Utils.Notify(LocalPlayer, "Welcome", "'cmds' to see all of the commands, 'config
 if (debug.info(2, "f") == nil) then
 	Utils.Notify(LocalPlayer, "Outdated Script", "use the loadstring to get latest updates", 10);
 end
-_L.LatestCommit = JSONDecode(Services.HttpService, game.HttpGetAsync(game, "https://api.github.com/repos/heIlth/fates-admin-remakecommits?per_page=1&path=src.lua"))[1]
+_L.LatestCommit = JSONDecode(Services.HttpService, game.HttpGetAsync(game, "https://api.github.com/repos/heIlth/fates-admin-remake/commits?per_page=1&path=src.lua"))[1]
 wait(1);
 Utils.Notify(LocalPlayer, "Newest Update", format("%s - %s", _L.LatestCommit.commit.message, _L.LatestCommit.commit.author.name));
